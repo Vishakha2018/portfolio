@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 34);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* so that page will scroll and then come on given path not come directly */
+nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(33, 33, 56);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(192, 192, 245);
+    font-size: 1.01rem;
+}
+
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0px;
+    margin-bottom: 0px;
+}
+
+.leftSection {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.leftSection span {
+    font-size: 2rem;
+}
+
+.leftSection p {
+    font-size: 16px;
+    color: #ababab
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.purple {
+    color: rgb(235, 160, 235);
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+    /* height: 80vh; */
+}
+
+.secondSection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+    color: rgb(235, 160, 235);
+}
+
+/* about */
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    /* flex-basis means we are giving width to column */
+    /* margin: 0px 50px; */
+}
+
+.about-col-1 img {
+    width: 70%;
+    margin-left: 30px;
+    border-radius: 15%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    /* margin-top: 0px; */
+    margin-bottom: 50px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(235, 160, 235);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-content ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-content ul li span {
+    color: rgb(235, 160, 235);
+    font-size: 14px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.company-project {
+    display: flex;
+    /* Use flexbox to layout items in a row */
+    justify-content: space-around;
+    /* Space items evenly across the container */
+    gap: 20px;
+    /* Gap between the two inner divs */
+    margin: 20px auto;
+    /* Center the container */
+}
+
+.company-project>div {
+    width: 300px;
+    /* Width of each inner div */
+    padding: 20px;
+    /* Padding inside each inner div */
+    border: 1px solid #ccc;
+    /* Border of each inner div */
+    border-radius: 8px;
+    /* Rounded corners for each inner div */
+    background-color: #f9f9f9;
+    /* Background color for each inner div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow for each inner div */
+}
+
+.company-project h2 {
+    font-size: 18px;
+    /* Font size for the heading */
+    margin-bottom: 10px;
+    /* Space below the heading */
+    color: #333;
+    /* Text color for the heading */
+}
+
+.company-project p {
+    font-size: 14px;
+    /* Font size for the paragraph */
+    line-height: 1.6;
+    /* Line height for better readability */
+    color: #666;
+    /* Text color for the paragraph */
+}
+
+
+
+/* projects */
+
+#projects {
+    padding: 50px 0;
+}
+
+/* .project{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+} */
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.layer {
+    width: 80%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ffd000;
+    text-decoration: none;
+    font-size: 18px;
+
+
+}
+
+.project:hover .layer {
+    height: 100%;
+}
+
+
+
+/* skills */
+
+#skills {
+    padding: 30px 5px;
+
+}
+
+.skill {
+    text-align: center;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-gap: 30px;
+    margin-top: 30px;
+    width: 600px;
+    /* align-items: center;  */
+    margin-left: 350px;
+
+}
+
+.skills-list div {
+    /* background:   rgb(33, 33, 56); */
+    /* opacity: 0.4; */
+    padding: 20px;
+    font-size: 60px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    /* border-color: gray; */
+    /* margin-left: 30px; */
+    /* color: black; */
+
+}
+
+.skills-list div:hover {
+    background: #74C0FC;
+    transform: translateY(-2px);
+}
+
+.hover-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+
+}
+
+.hover-container i,
+.hover-container .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+    text-align: center;
+}
+
+.hover-container .hover-text {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Show ellipsis if text is too long */
+}
+
+.hover-container:hover i {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hover-container:hover .hover-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* contact */
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn {
+    font-size: small;
+    display: block;
+    margin: 15px 0px;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #fff;
+    transition: background 0.5s;
+    background-color: transparent;
+
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    border: 1px solid gray;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+#success-message{
+    color: #61b752;
+    margin-top: 15px;
+    display: block;
+
+}
+
+/* css for small screen  */
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
