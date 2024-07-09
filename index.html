@@ -27,10 +27,7 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Project</a></li>
                     <li><a href="#contact">Contact Me</a></li>
-                    <!-- <i class="fas fa-times" onclick="closemenu()"></i> -->
-                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars" onclick="opnemenu()"></i>
             </nav>
 
             <div class="firstSection">
@@ -291,31 +288,7 @@
 
 
     </script>
-    <script>
-        var slidemenu = document.getElementById("slidemenu");
-
-        function opnemenu() {
-            slidemenu.style.right = "0";
-        }
-
-        function closemenu() {
-            slidemenu.style.right = "-200px";
-        }
-
-        // Close menu when cross icon is clicked
-        var closeIcon = document.querySelector('#slidemenu .fa-square-xmark');
-        closeIcon.addEventListener('click', function () {
-            closemenu();
-        });
-
-        // Close the menu when a menu item is clicked (optional)
-        var menuItems = document.querySelectorAll('#slidemenu li a');
-        menuItems.forEach(item => {
-            item.addEventListener('click', function () {
-                closemenu();
-            });
-        });
-    </script>
+   
 
 
     <script>
