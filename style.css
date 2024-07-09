@@ -9,9 +9,11 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /* so that page will scroll and then come on given path not come directly */
 nav {
 
@@ -372,20 +374,32 @@ body {
     width: 100px;
     height: 100px;
     overflow: hidden;
-
+    border: 1px solid #ccc;
+    /* Gray border */
+    transition: border-color 0.3s;
+    /* Smooth border color transition */
 }
 
-.hover-container i,
-.hover-container .hover-text {
+/* Icon styling */
+.hover-container img,
+.hover-container i {
+    width: 60px;
+    height: 60px;
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s;
-    text-align: center;
+
 }
 
+/* Text styling */
 .hover-container .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     visibility: hidden;
     width: 100%;
@@ -394,18 +408,20 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     /* Show ellipsis if text is too long */
+    transition: opacity 0.3s;
 }
 
-.hover-container:hover i {
-    opacity: 0;
-    visibility: hidden;
-}
-
+/* Show text on hover */
 .hover-container:hover .hover-text {
     opacity: 1;
     visibility: visible;
 }
 
+/* Hide icon on hover */
+.hover-container:hover img,
+.hover-container:hover i {
+    opacity: 0;
+}
 
 /* contact */
 
@@ -498,7 +514,8 @@ form .btn2 {
     font-weight: 300;
     margin-top: 20px;
 }
-#success-message{
+
+#success-message {
     color: #61b752;
     margin-top: 15px;
     display: block;
@@ -510,84 +527,8 @@ nav .fas {
     display: none;
 }
 
-/* @media only screen and (max-width:600px) {
-    nav .fas {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fas {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-} */
-
-/* @media (max-width: 600px) {
-    nav ul {
-        position: fixed;
-        right: -200px;
-        top: 0;
-        width: 200px;
-        height: 100%;
-        background: #333;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        transition: right 0.3s;
-        padding: 20px;
-        z-index: 100;
-    }
-
-    nav ul li {
-        padding: 10px 0;
-        width: 100%;
-    }
-
-    nav ul li a {
-        color: #fff;
-    }
-
-    nav ul i {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-    }
-
-    nav .fa-bars {
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 101;
-    }
-
-    nav .left {
-        flex-grow: 1;
-    }
-} */
 @media (max-width: 600px) {
+
     /* Hide the entire slidemenu */
     #slidemenu {
         display: none;
@@ -616,7 +557,7 @@ nav .fas {
         text-align: center;
     }
 
-    .firstSection > div {
+    .firstSection>div {
         width: 100%;
     }
 
@@ -677,7 +618,8 @@ nav .fas {
 
     .contact-left p,
     .contact-right p {
-        text-align: center; /* Center align email and contact number */
+        text-align: center;
+        /* Center align email and contact number */
     }
 
     .social-icons {
@@ -685,7 +627,8 @@ nav .fas {
     }
 
     .btn {
-        margin: 15px auto; /* Center align buttons */
+        margin: 15px auto;
+        /* Center align buttons */
     }
 
     .copyright {
@@ -698,10 +641,12 @@ nav .fas {
     }
 
     .tab-content {
-        padding: 0 10px; /* Adjusted padding for better spacing */
+        padding: 0 10px;
+        /* Adjusted padding for better spacing */
     }
 
     .tab-content ul li {
-        margin-bottom: 8px; /* Reduced margin between list items */
+        margin-bottom: 8px;
+        /* Reduced margin between list items */
     }
 }

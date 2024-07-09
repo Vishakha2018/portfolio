@@ -109,47 +109,65 @@
         <div class="container">
             <h1 class="skill" sub-title>Skills</h1>
             <div class="skills-list">
+
                 <div class="hover-container">
-                    <i class="fa-brands fa-react " style="color: #74C0FC;"></i>
-                    <span class="hover-text">React</span>
+                    <i class="fa-brands fa-react" style="color: #74C0FC;"></i>
+                    <span class="hover-text ">React</span>
                 </div>
                 <div class="hover-container">
-                    <i class="fa-brands fa-square-js " style="color: #FFD43B;"></i>
+                    <img src="images/javascript.png" alt="JavaScript Icon" style="width: 60px; height: 60px;">
                     <span class="hover-text">JavaScript</span>
                 </div>
                 <div class="hover-container">
-                    <i class="fa-brands fa-html5" style="color: #14f089;"></i>
-                    <span class="hover-text">HTML5</span>
+                    <img src="images/redux-icon.png" alt="Redux Icon" style="width: 60px; height: 60px;">
+                    <span class="hover-text">Redux</span>
                 </div>
                 <div class="hover-container">
-                    <i class="fa-brands fa-bootstrap " style="color: #B197FC;"></i>
-                    <span class="hover-text">Bootstrap</span>
+                    <img src="images/typescript.png" alt="TypeScript Icon" style="width: 60px; height: 60px;">
+                    <span class="hover-text">TypeScript</span>
                 </div>
                 <div class="hover-container">
-                    <i class="fa-brands fa-css3-alt " style="color: #74C0FC;"></i>
+                    <img src="images/python.png" alt="Python Icon" style="width: 60px; height: 60px;">
+                    <span class="hover-text">Python</span>
+                </div>
+                <div class="hover-container">
+                    <img src="images/html.png" alt="HTML Icon" style="width: 60px; height: 60px;">
+                    <span class="hover-text">HTML</span>
+                </div>
+                <div class="hover-container">
+                    <img src="images/css.png" alt="CSS Icon" style="width: 60px; height: 60px;">
                     <span class="hover-text">CSS</span>
                 </div>
                 <div class="hover-container">
-                    <i class="fa-brands fa-node-js" style="color: #74C0FC;"></i>
-                    <span class="hover-text">NodeJS</span>
+                    <img src="images/postman.png" alt="Postman Icon" style="width: 60px; height: 60px;">
+                    <span class="hover-text">Postman</span>
                 </div>
                 <div class="hover-container">
-                    <i class="fa-brands fa-github" style="color: #ed071e;"></i>
-                    <span class="hover-text">Github</span>
+                    <img src="images/git.png" alt="Git Icon" style="width: 60px; height: 60px;">
+                    <span class="hover-text">Git</span>
                 </div>
                 <div class="hover-container">
-                    <i class="fa-brands fa-jira" style="color: #e614bf;"></i>
+                    <img src="images/jira.png" alt="Jira Icon" style="width: 60px; height: 60px;">
                     <span class="hover-text">Jira</span>
                 </div>
                 <div class="hover-container">
-                    <i class="fa-brands fa-python" style="color: #7158bb;"></i>
-                    <span class="hover-text">Python</span>
+                    <img src="images/jest.png" alt="Jest Icon" style="width: 60px; height: 60px;">
+                    <span class="hover-text">Jest</span>
                 </div>
-
                 <div class="hover-container">
-                    <i class="fa-solid fa-database " style="color: #f5f906;"></i>
+                    <i class="fa-solid fa-database" style="color: #f5f906;"></i>
                     <span class="hover-text">SQL</span>
                 </div>
+                <div class="hover-container">
+                    <img src="images/bootstrap.png" alt="Bootstrap Icon" style="width: 60px; height: 60px;">
+                    <span class="hover-text">Bootstrap</span>
+                </div>
+                <div class="hover-container">
+                    <img src="images/materialui.png" alt="Material UI Icon" style="width: 60px; height: 60px;">
+                    <span class="hover-text">Material UI</span>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -273,31 +291,31 @@
 
 
     </script>
-   <script>
-    var slidemenu = document.getElementById("slidemenu");
+    <script>
+        var slidemenu = document.getElementById("slidemenu");
 
-    function opnemenu() {
-        slidemenu.style.right = "0";
-    }
+        function opnemenu() {
+            slidemenu.style.right = "0";
+        }
 
-    function closemenu() {
-        slidemenu.style.right = "-200px";
-    }
+        function closemenu() {
+            slidemenu.style.right = "-200px";
+        }
 
-    // Close menu when cross icon is clicked
-    var closeIcon = document.querySelector('#slidemenu .fa-square-xmark');
-    closeIcon.addEventListener('click', function() {
-        closemenu();
-    });
-
-    // Close the menu when a menu item is clicked (optional)
-    var menuItems = document.querySelectorAll('#slidemenu li a');
-    menuItems.forEach(item => {
-        item.addEventListener('click', function() {
+        // Close menu when cross icon is clicked
+        var closeIcon = document.querySelector('#slidemenu .fa-square-xmark');
+        closeIcon.addEventListener('click', function () {
             closemenu();
         });
-    });
-</script>
+
+        // Close the menu when a menu item is clicked (optional)
+        var menuItems = document.querySelectorAll('#slidemenu li a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', function () {
+                closemenu();
+            });
+        });
+    </script>
 
 
     <script>
