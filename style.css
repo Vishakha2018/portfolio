@@ -510,7 +510,7 @@ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width:600px) {
+/* @media only screen and (max-width:600px) {
     nav .fas {
         display: block;
         font-size: 25px;
@@ -538,5 +538,170 @@ nav .fas {
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+} */
+
+/* @media (max-width: 600px) {
+    nav ul {
+        position: fixed;
+        right: -200px;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        background: #333;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        transition: right 0.3s;
+        padding: 20px;
+        z-index: 100;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul i {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    nav .fa-bars {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 101;
+    }
+
+    nav .left {
+        flex-grow: 1;
+    }
+} */
+@media (max-width: 600px) {
+    /* Hide the entire slidemenu */
+    #slidemenu {
+        display: none;
+    }
+
+    /* Optionally, adjust the position of the left content */
+    nav .left {
+        /* Adjust styles as needed */
+    }
+}
+
+/* Media Query for iPhones and devices with max width 600px */
+@media only screen and (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstSection > div {
+        width: 100%;
+    }
+
+    .secondSection {
+        text-align: center;
+    }
+
+    .rightSection img {
+        width: 100%;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .about-col-1 img {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .layer {
+        width: 100%;
+        padding: 0 20px;
+        font-size: 12px;
+    }
+
+    .skills-list {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .contact-left p,
+    .contact-right p {
+        text-align: center; /* Center align email and contact number */
+    }
+
+    .social-icons {
+        margin-left: 0;
+    }
+
+    .btn {
+        margin: 15px auto; /* Center align buttons */
+    }
+
+    .copyright {
+        padding: 10px;
+    }
+
+    .hover-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tab-content {
+        padding: 0 10px; /* Adjusted padding for better spacing */
+    }
+
+    .tab-content ul li {
+        margin-bottom: 8px; /* Reduced margin between list items */
     }
 }

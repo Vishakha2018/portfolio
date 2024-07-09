@@ -27,7 +27,8 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Project</a></li>
                     <li><a href="#contact">Contact Me</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <!-- <i class="fas fa-times" onclick="closemenu()"></i> -->
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="opnemenu()"></i>
             </nav>
@@ -40,7 +41,8 @@
                         <p>
                             Experienced Frontend Developer with a demonstrated history of creating
                             user-friendly web applications.Over the past 2.9 years, I have honed my skills
-                            in JavaScript, HTML, CSS, Redux, Typescript, Jest,and modern Frontend framework like ReactJs.
+                            in JavaScript, HTML, CSS, Redux, Typescript, Jest,and modern Frontend framework like
+                            ReactJs.
                         </p>
                     </div>
                     <a href="images/VishakhaRungtaResume.pdf" download class="btn btn2">Download CV</a>
@@ -64,12 +66,12 @@
 
                     <p>
                         I am an experienced Frontend Developer with a proven track record of creating
-                         user-friendly web applications. Over the past 2.9 years, I have refined my
-                          skills in JavaScript, HTML, CSS, Redux, TypeScript, Jest, and modern
-                           frontend frameworks like ReactJs. My passion lies in crafting intuitive
-                            and responsive user interfaces, ensuring seamless user experiences.
-                             I thrive on solving complex problems and continually seek to stay
-                              updated with the latest industry trends and best practices.
+                        user-friendly web applications. Over the past 2.9 years, I have refined my
+                        skills in JavaScript, HTML, CSS, Redux, TypeScript, Jest, and modern
+                        frontend frameworks like ReactJs. My passion lies in crafting intuitive
+                        and responsive user interfaces, ensuring seamless user experiences.
+                        I thrive on solving complex problems and continually seek to stay
+                        updated with the latest industry trends and best practices.
                     </p>
                     <div class="tab-titles">
                         <!-- <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> -->
@@ -77,7 +79,7 @@
                         <p class="tab-links" onclick="opentab('education')">Education</p>
 
                     </div>
-                   
+
                     <div class="tab-content active-tab" id="experience">
                         <ul>
                             <li><span>Aug 2021 - Present</span><br>Software Engineer <br> Globallogic, a Hitachi Group
@@ -160,7 +162,7 @@
             <div class="projects-list">
                 <div class="project">
                     <img src="images/web.jpg">
-                  
+
                     <div class="layer">
                         <h2>E-commerce website</h2>
                         <p>
@@ -172,11 +174,12 @@
                 </div>
                 <div class="project">
                     <img src="images/news.png">
-                    
+
                     <div class="layer">
                         <h2>News</h2>
                         <p>
-                            The News project built with ReactJS delivers real-time news updates by fetching and displaying articles from various sources, offering a responsive and user-friendly interface.
+                            The News project built with ReactJS delivers real-time news updates by fetching and
+                            displaying articles from various sources, offering a responsive and user-friendly interface.
                         </p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -197,9 +200,10 @@
                     <div class="layer">
                         <h2>TextUtils</h2>
                         <p>
-                            Textutils provides a quick and efficient way to analyze your text, offering features like word count and character count.
+                            Textutils provides a quick and efficient way to analyze your text, offering features like
+                            word count and character count.
                         </p>
-                        
+
                         <a href="https://textutils-word-translate.netlify.app/">View Project</a>
                         <a href="https://github.com/Vishakha2018/TextUtils"><i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -269,33 +273,51 @@
 
 
     </script>
-    <script>
-        var slidemenu = document.getElementById("slidemenu");
-        function opnemenu(){
-            slidemenu.style.right="0"
-        }
-        function closemenu(){
-            slidemenu.style.right="-200px"
-        }
-    </script>
+   <script>
+    var slidemenu = document.getElementById("slidemenu");
+
+    function opnemenu() {
+        slidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        slidemenu.style.right = "-200px";
+    }
+
+    // Close menu when cross icon is clicked
+    var closeIcon = document.querySelector('#slidemenu .fa-square-xmark');
+    closeIcon.addEventListener('click', function() {
+        closemenu();
+    });
+
+    // Close the menu when a menu item is clicked (optional)
+    var menuItems = document.querySelectorAll('#slidemenu li a');
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            closemenu();
+        });
+    });
+</script>
+
+
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyrAKK2gZdcbU89Q5qKANIcm6ZhnKioXwCTy17CkZXl3e4kv1jpj-OO4b3-fmKf9K3J/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById("success-message")
+        const msg = document.getElementById("success-message")
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML="Message sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
-                
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 
 </body>
 
