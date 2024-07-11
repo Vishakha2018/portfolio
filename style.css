@@ -138,7 +138,8 @@ nav ul li a:hover {
 
 .about-col-1 img {
     width: 70%;
-    margin-left: 30px;
+    height: 100%;
+    margin-left: 85px;
     border-radius: 15%;
 }
 
@@ -576,7 +577,7 @@ nav .fas {
     }
 
     .about-col-1 img {
-        width: 80%;
+        width: 100%;
         margin-left: 0;
     }
 
